@@ -85,7 +85,6 @@ The forecasting solution will directly impact **Fossil**'s bottom line:
 
 ## Technologies Used
 
-![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)  
 - **Python** (Pandas, Numpy, Scikit-learn)
 - **LightGBM** for machine learning modeling
 - **ARIMA** for time series forecasting
