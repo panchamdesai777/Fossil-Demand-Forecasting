@@ -1,7 +1,9 @@
-# Fossil Demand Forecasting - ML Solution
+# Fossil Demand Forecasting: A Machine Learning Solution
+
+![Fossil Logo](https://images.unsplash.com/photo-1633869701352-eb7af08a1bc4?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Problem Statement
-Fossil, a global leader in fashion design and manufacturing, is renowned for its watches, handbags, and accessories. As a retailer of diverse products, Fossil faces challenges from both overproduction and underproduction. With production lead times and fluctuating market demands, predicting future product demand is critical for ensuring:
+Fossil, a global leader in fashion design and manufacturing, is renowned for its watches, handbags, and accessories. As a retailer of diverse products, **Fossil** faces challenges from both overproduction and underproduction. With production lead times and fluctuating market demands, predicting future product demand is critical for ensuring:
 
 - **Reduced inventory holding costs**
 - **Minimized overstock and stockouts**
@@ -9,8 +11,10 @@ Fossil, a global leader in fashion design and manufacturing, is renowned for its
 
 This project focuses on accurately forecasting demand for Fossil's products, specifically watches, to optimize inventory and streamline operations.
 
+---
+
 ## Dataset Overview
-The dataset consists of 44,907 rows and 45 columns, featuring both categorical and numerical data relevant to demand forecasting. Below are some of the key attributes:
+The dataset consists of **44,907 rows** and **45 columns**, featuring both categorical and numerical data relevant to demand forecasting.
 
 ### Categorical Features
 
@@ -42,48 +46,56 @@ The dataset consists of 44,907 rows and 45 columns, featuring both categorical a
 | **year**                         | Year for the respective data entry                                               |
 | **flag100**                      | Flag indicating if SKU was discounted                                            |
 
+---
+
 ## Solution Overview
-Our solution leverages machine learning techniques and a structured approach to predict demand with high accuracy:
 
-### Step 1: Data Preprocessing
+### **Step 1: Data Preprocessing**
 - Cleaned the dataset by removing negative values in the target variable (`sellin`).
-- Applied label encoding and `word2vec` to transform categorical features into a model-friendly format.
+- Applied **label encoding** and **word2vec** to transform categorical features into a model-friendly format.
 
-### Step 2: Feature Engineering
+### **Step 2: Feature Engineering**
 - Created **lead-lag features** to incorporate past data points for accurate future demand predictions.
 
-### Step 3: Temporal Feature Engineering
+### **Step 3: Temporal Feature Engineering**
 - Generated an **ARIMA-based feature** using the `sellout` column to capture temporal trends and enhance time series forecasting.
 
-### Step 4: Hyperparameter Optimization
+### **Step 4: Hyperparameter Optimization**
 - Optimized model parameters using **Bayesian Optimization** for the best possible configuration.
 
-### Step 5: Model Evaluation and Finalization
+### **Step 5: Model Evaluation and Finalization**
 - Built a **LightGBM** model and evaluated its performance using **K-fold cross-validation**, focusing on the **Mean Absolute Percentage Error (MAPE)** to gauge accuracy.
 
-## Business Impact
-The forecasting solution aims to drive tangible business results for Fossil:
+---
 
-### Cost Optimization
+## Business Impact
+
+The forecasting solution will directly impact **Fossil**'s bottom line:
+
+### **Cost Optimization**
 - **$400M** reduction in inventory holding costs through improved forecast accuracy and production planning.
 
-### Revenue Growth
+### **Revenue Growth**
 - Protect and enhance **$2.8B** in net sales by ensuring product availability and matching customer demand.
 
-### Profitability Boost
+### **Profitability Boost**
 - An anticipated **$0.41 EPS improvement** through better inventory management and operational efficiency.
 
+---
+
 ## Technologies Used
+
+![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)  
 - **Python** (Pandas, Numpy, Scikit-learn)
 - **LightGBM** for machine learning modeling
 - **ARIMA** for time series forecasting
 - **Bayesian Optimization** for hyperparameter tuning
 - **Word2Vec** for categorical feature embedding
 
+---
+
 ## Installation & Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/fossil-demand-forecasting.git
-
- 
