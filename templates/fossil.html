@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fossil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://c0.wallpaperflare.com/preview/193/811/645/united-kingdom-hull-automatic-chromatic.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Add AOS Library in the head section -->
+<head>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </head>
+  
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="100">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span style="font-family:'Playfair Display', serif; font-size:3.5em; font-weight:bold; color:#d4af37;" class="w3-hide-small">
+        Fossil Demand Forecasting
+      </span><br>
+      <span style="font-family:'Playfair Display', serif; font-size:2.5em; font-weight:bold; color:#d4af37;" class="w3-hide-large w3-hide-medium">
+        Fossil Demand Forecasting
+      </span><br>
+      <span style="font-family:'Lora', serif; font-size:1.2em; color:#f5f5f5;">
+        Forecast the watch units required by Fossil, three months into the future
+      </span>
+      <p>
+        <a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" 
+           style="font-family:'Lora', serif; color:#1a1a1a; border-radius:4px;">
+          Tap to know more
+        </a>
+      </p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px;">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+  
+  <!-- Problem Statement -->
+<div class="w3-container" style="padding:128px 16px; background: url('https://cdnb.artstation.com/p/assets/images/images/028/524/749/large/aditya-maurya-comp-1-00095.jpg?1594731431') no-repeat center center/cover; color:#f5f5f5;" id="about" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+  <!-- Semi-transparent overlay for better readability -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.7); z-index:1;"></div>
+
+  <div style="position:relative; z-index:2;">
+    <h3 class="w3-center" style="color:#d4af37;">PROBLEM STATEMENT</h3>
+    <p class="w3-center w3-large" style="margin-bottom:48px; color:#dcdcdc;">
+      Fossil is a leading global fashion designer and manufacturer, famous for its watches, handbags, and other accessories. 
+      As a retailer of a wide variety of products, both overproduction and underproduction can pose problems for the business. 
+      Therefore predicting demand as accurately as possible is critical to Fossil. Because of the normal production lead time, 
+      Fossil needs accurate forecasts months in advance.
+    </p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <!-- Textual Problem Statement Section -->
+      <div class="w3-half" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+        <p class="w3-large" style="color:#e0e0e0;">
+          The demand for Fossil watches is highly dynamic and influenced by seasonal trends, marketing campaigns, 
+          and regional preferences. Predicting demand with high accuracy is crucial to ensure:
+        </p>
+        <ul class="w3-ul" style="background-color:#2b2b2b; border-radius:8px; padding:16px; box-shadow:0 4px 6px rgba(0, 0, 0, 0.5);">
+          <li>Reduced inventory holding costs</li>
+          <li>Minimized overstock and stockouts</li>
+          <li>Improved customer satisfaction</li>
+        </ul>
+      </div>
+      <!-- Watch Image Section -->
+      <div class="w3-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+        <img src="https://images.unsplash.com/photo-1633869701352-eb7af08a1bc4?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+             alt="Fossil Watch" 
+             style="width:100%; max-width:400px; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); transition: transform 0.3s ease-in-out;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- AOS Initialization Script -->
+<script>
+    AOS.init({
+      duration: 1200,
+      once: false, // This ensures that animations are triggered multiple times
+    });
+  
+    // Refresh AOS when navigating through sections
+    window.addEventListener("load", function() {
+      AOS.refresh();
+    });
+  
+    // Reinitialize AOS when navigating through sections (e.g., button clicks)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+  
+        // Refresh AOS after scrolling
+        setTimeout(function() {
+          AOS.refresh();
+        }, 500); // Refresh after smooth scroll completes
+      });
+    });
+  </script>
+
+  
+  
+
+
+<!-- Key Features and Variables Section -->
+<div class="w3-container" style="padding:128px 16px; position:relative; background: url('https://cdnb.artstation.com/p/assets/images/images/028/524/749/large/aditya-maurya-comp-1-00095.jpg?1594731431') no-repeat center center/cover; color:#f5f5f5;" id="features">
+  <!-- Semi-transparent overlay for better readability -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.7); z-index:1;"></div>
+
+  <!-- Content Section -->
+  <div style="position:relative; z-index:2;">
+    <h3 style="font-family: 'Playfair Display', serif; color:#d4af37; text-align:center;" data-aos="fade-down" data-aos-duration="1200">Dataset Overview</h3>
+    <p style="font-family: 'Lora', serif; color:#dcdcdc; text-align:center; font-size:1.2em;" data-aos="fade-down" data-aos-duration="1200">
+      The dataset includes key categorical and numerical features essential for demand forecasting. Below is an overview of the structure and details of the dataset.
+    </p>
+
+    <!-- Dataset Structure Table -->
+    <div class="w3-row-padding">
+      <div class="w3-col m4" data-aos="zoom-in" data-aos-duration="1200">
+        <h4 style="font-family: 'Playfair Display', serif; color:#d4af37; text-align:center;">Dataset Structure</h4>
+        <table class="w3-table w3-bordered w3-hoverable" style="background-color:#1a1a1a; color:#f5f5f5; border-radius:8px;">
+          <tr style="background-color:#d4af37; color:#1a1a1a;">
+            <th>Attribute</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Rows</td>
+            <td>44,907</td>
+          </tr>
+          <tr>
+            <td>Columns</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Missing Data</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Duplicate Rows</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Categorical Features Table -->
+      <div class="w3-col m4" data-aos="zoom-in" data-aos-duration="1500">
+        <h4 style="font-family: 'Playfair Display', serif; color:#d4af37; text-align:center;">Categorical Features</h4>
+        <table class="w3-table w3-bordered w3-hoverable" style="background-color:#1a1a1a; color:#f5f5f5; border-radius:8px;">
+          <tr style="background-color:#d4af37; color:#1a1a1a;">
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>sku_name</td>
+            <td>Product SKU identifier</td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td>Respective month for the data entry</td>
+          </tr>
+          <tr>
+            <td>product_lifecycle_stage</td>
+            <td>Lifecycle stage of each product (introduction, growth, maturity, decline)</td>
+          </tr>
+          <tr>
+            <td>disc_month</td>
+            <td>Indicator for discount events if monthly sales are below mean unit price and unit sales surpass the median</td>
+          </tr>
+          <tr>
+            <td>cum_disc</td>
+            <td>Cumulative discount effect indicator spanning three months, derived from disc_month variable</td>
+          </tr>
+          <tr>
+            <td>cat_gender_both</td>
+            <td>SKU targeted for both male and female customers</td>
+          </tr>
+          <tr>
+            <td>cat_gender_men</td>
+            <td>SKU targeted for male customers</td>
+          </tr>
+          <tr>
+            <td>cat_gender_women</td>
+            <td>SKU targeted for female customers</td>
+          </tr>
+          <tr>
+            <td>weeks</td>
+            <td>Number of weekends in the respective month</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Numerical Features Table -->
+      <div class="w3-col m4" data-aos="zoom-in" data-aos-duration="1800">
+        <h4 style="font-family: 'Playfair Display', serif; color:#d4af37; text-align:center;">Numerical Features</h4>
+        <table class="w3-table w3-bordered w3-hoverable" style="background-color:#1a1a1a; color:#f5f5f5; border-radius:8px;">
+          <tr style="background-color:#d4af37; color:#1a1a1a;">
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>starting_inventory</td>
+            <td>Starting inventory at the beginning of the month at the central dome</td>
+          </tr>
+          <tr>
+            <td>sellin</td>
+            <td>Sales demand to customers, used as the dependent variable for forecasting (4-month lead)</td>
+          </tr>
+          <tr>
+            <td>sellin_channel_X</td>
+            <td>Sales demand across specific channels (1 through 8)</td>
+          </tr>
+          <tr>
+            <td>sellout</td>
+            <td>Final customer sales after retail handling</td>
+          </tr>
+          <tr>
+            <td>onhand_inventory</td>
+            <td>Inventory remaining on customer side post-sales</td>
+          </tr>
+          <tr>
+            <td>leftover_inventory</td>
+            <td>Unsold inventory left at the end of a sales cycle</td>
+          </tr>
+          <tr>
+            <td>sellout_channel_X</td>
+            <td>Sellout across specific channels (1 through 10)</td>
+          </tr>
+          <tr>
+            <td>onhand_inventory_channel_X</td>
+            <td>Inventory held in stock for each specific sales channel</td>
+          </tr>
+          <tr>
+            <td>price</td>
+            <td>Retail price for each SKU</td>
+          </tr>
+          <tr>
+            <td>year</td>
+            <td>Respective year for the data entry</td>
+          </tr>
+          <tr>
+            <td>flag100</td>
+            <td>Flag indicating if SKU was discounted</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<!-- Solution Overview -->
+<div class="w3-container" style="padding:128px 16px; background: url('https://cdnb.artstation.com/p/assets/images/images/028/524/749/large/aditya-maurya-comp-1-00095.jpg?1594731431') no-repeat center center/cover; color:#f5f5f5;" id="solution-overview" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+  <!-- Semi-transparent overlay for better readability -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.7); z-index:1;"></div>
+
+  <div style="position:relative; z-index:2;">
+    <h3 class="w3-center" style="color:#d4af37;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">SOLUTION OVERVIEW</h3>
+    <p class="w3-center w3-large" style="margin-bottom:48px; color:#dcdcdc;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+      To predict demand accurately for Fossil's products, a structured and systematic approach was followed, using advanced machine learning techniques:
+    </p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px;">
+      <div class="w3-col m6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500">
+        <div class="w3-card-4" style="background-color:#2b2b2b; color:#f5f5f5; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); padding:32px; margin-bottom:32px;">
+          <h4 style="color:#d4af37;">Step 1: Data Preprocessing</h4>
+          <p style="color:#e0e0e0;">
+            Cleaned the data by removing negative values in the target variable. Performed label encoding and word2vec on categorical features to ensure they are suitable for model input.
+          </p>
+        </div>
+        <div class="w3-card-4" style="background-color:#2b2b2b; color:#f5f5f5; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); padding:32px; margin-bottom:32px;">
+          <h4 style="color:#d4af37;">Step 2: Feature Engineering</h4>
+          <p style="color:#e0e0e0;">
+            Created lead-lag features to assist the model in predicting the demand for SKUs by incorporating past data points to forecast future demand.
+          </p>
+        </div>
+      </div>
+      <div class="w3-col m6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
+        <div class="w3-card-4" style="background-color:#2b2b2b; color:#f5f5f5; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); padding:32px; margin-bottom:32px;">
+          <h4 style="color:#d4af37;">Step 3: Temporal Feature Engineering</h4>
+          <p style="color:#e0e0e0;">
+            Created an ARIMA-based feature using the 'sellout' column to capture temporal dynamics and enhance the forecasting power of time series modeling.
+          </p>
+        </div>
+        <div class="w3-card-4" style="background-color:#2b2b2b; color:#f5f5f5; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); padding:32px; margin-bottom:32px;">
+          <h4 style="color:#d4af37;">Step 4: Hyperparameter Optimization</h4>
+          <p style="color:#e0e0e0;">
+            Optimized model parameters using Bayesian optimization, ensuring the best-performing model configuration for demand forecasting.
+          </p>
+        </div>
+      </div>
+      <div class="w3-col m12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+        <div class="w3-card-4" style="background-color:#2b2b2b; color:#f5f5f5; border-radius:8px; box-shadow:0 6px 10px rgba(0, 0, 0, 0.8); padding:32px;">
+          <h4 style="color:#d4af37;">Step 5: Model Evaluation and Finalization</h4>
+          <p style="color:#e0e0e0;">
+            Created a LightGBM model and evaluated it using K-fold cross-validation, with Mean Absolute Percentage Error (MAPE) as the primary metric to assess model accuracy and performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Include AOS JavaScript library for animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Initialize AOS animations
+  AOS.init({
+    duration: 1200,  // Animation duration
+    easing: 'ease-in-out',  // Animation easing
+    once: true,  // Animation will only happen once when scrolling
+  });
+</script>
+
+<!-- Include AOS Library -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Form Section -->
+<div class="w3-container" style="padding:128px 16px; background: url('https://cdnb.artstation.com/p/assets/images/images/028/524/749/large/aditya-maurya-comp-1-00095.jpg?1594731431') no-repeat center center; background-size: cover; color:#f5f5f5;" id="predict-form">
+  <div style="display: flex; align-items: flex-start; justify-content: center; gap: 24px;">
+
+    <!-- Form Container -->
+    <div style="flex: 1; min-width: 300px; background-color: rgba(26, 26, 26, 0.9); padding: 48px; border-radius: 12px;">
+      <h3 class="w3-center" style="color:#d4af37; font-family: 'Playfair Display', serif;">Predict SKU Demand</h3>
+      <p class="w3-center w3-large" style="margin-bottom: 32px; color: #dcdcdc; font-family: 'Lora', serif;">
+        Provide the details below to predict demand for your selected SKU.
+      </p>
+
+      <form id="predictForm" class="w3-container">
+        <!-- SKU Name -->
+        <label for="sku_name" style="color: #f5f5f5; font-family: 'Lora', serif;">SKU Name:</label>
+        <input type="text" id="sku_name" name="sku_name" class="w3-input w3-margin-bottom" placeholder="Enter SKU Name" required style="background-color:#2b2b2b; color:#f5f5f5; border: 1px solid #d4af37;">
+
+        <!-- Year -->
+        <label for="year" style="color: #f5f5f5; font-family: 'Lora', serif;">Year:</label>
+        <select id="year" name="year" class="w3-select w3-margin-bottom" style="background-color:#2b2b2b; color:#f5f5f5; border: 1px solid #d4af37;" required>
+          <option value="2021">2021</option>
+        </select>
+
+        <!-- Month -->
+        <label for="month" style="color: #f5f5f5; font-family: 'Lora', serif;">Month:</label>
+        <select id="month" name="month" class="w3-select w3-margin-bottom" style="background-color:#2b2b2b; color:#f5f5f5; border: 1px solid #d4af37;" required>
+          <option value="" disabled selected>Select Month</option>
+          <script>
+            for (let i = 1; i <= 12; i++) {
+              document.write(`<option value="${i}">${i}</option>`);
+            }
+          </script>
+        </select>
+
+        <!-- SKU Category -->
+        <label for="sku_category" style="color: #f5f5f5; font-family: 'Lora', serif;">SKU Category:</label>
+        <select id="sku_category" name="sku_category" class="w3-select w3-margin-bottom" style="background-color:#2b2b2b; color:#f5f5f5; border: 1px solid #d4af37;" required>
+          <option value="MEN">Men</option>
+          <option value="WOMEN">Women</option>
+          <option value="BOTH">Both</option>
+        </select>
+
+        <!-- Predict Button -->
+        <button type="button" id="predictButton" class="w3-button w3-block" style="background-color:#d4af37; color:#1a1a1a; margin-top:16px; font-weight: bold; font-family: 'Lora', serif;">Predict</button>
+      </form>
+    </div>
+
+    <!-- Test Values Table -->
+    <div style="flex: 1; min-width: 300px; background-color: rgba(26, 26, 26, 0.9); padding: 24px; border-radius: 12px;">
+      <h4 style="color: #d4af37; font-family: 'Playfair Display', serif; text-align: center;">Example Test Values</h4>
+      <table class="w3-table-all w3-centered" style="margin-top: 16px; color: #f5f5f5; background-color: #2b2b2b; border: 1px solid #d4af37;">
+        <thead>
+          <tr style="background-color: #d4af37; color: #1a1a1a;">
+            <th>SKU Name</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>SKU Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table Row with Light Color and Visible Text -->
+          <tr style="background-color: #3c3c3c;">
+            <td>YOSHTLYNYOSHZZ</td>
+            <td>2021</td>
+            <td>8</td>
+            <td>Men</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- Prediction Result Section (Popup) -->
+<div id="result" class="w3-container w3-center w3-padding-32" style="margin-top: 32px; background-color: rgba(26, 26, 26, 0.9); color: #f5f5f5; border-radius: 12px; max-width: 600px; margin: auto; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+  <h4 style="color: #d4af37; font-family: 'Playfair Display', serif;">Prediction Result</h4>
+  <p id="responseText" style="color: #dcdcdc; font-family: 'Lora', serif;">
+    Generating result... <span id="loadingAnimation" style="font-size: 18px; color: #d4af37;">&#8230;</span>
+  </p>
+  <!-- Close Button -->
+  <button id="closeResult" class="w3-button w3-large" style="background-color: #d4af37; color: #1a1a1a; margin-top: 16px;">Close</button>
+</div>
+
+<!-- JavaScript to Handle Form Submission -->
+<script>
+  AOS.init(); // Initialize AOS for animations
+
+  // Show the result with a loading animation
+  document.getElementById('predictButton').addEventListener('click', function () {
+    // Get form values
+    const skuName = document.getElementById('sku_name').value;
+    const year = document.getElementById('year').value;
+    const month = document.getElementById('month').value;
+    const skuCategory = document.getElementById('sku_category').value;
+
+    // Set CAT_GENDER variables based on SKU category
+    let CAT_GENDER_MEN = 0, CAT_GENDER_WOMEN = 0, CAT_GENDER_BOTH = 0;
+    if (skuCategory === "MEN") CAT_GENDER_MEN = 1;
+    else if (skuCategory === "WOMEN") CAT_GENDER_WOMEN = 1;
+    else if (skuCategory === "BOTH") CAT_GENDER_BOTH = 1;
+
+    // Show loading animation
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('responseText').innerText = "Generating result... please wait...";
+
+    // Create JSON payload
+    const data = {
+      sku_name: skuName,
+      year: year,
+      month: month,
+      CAT_GENDER_MEN: CAT_GENDER_MEN,
+      CAT_GENDER_WOMEN: CAT_GENDER_WOMEN,
+      CAT_GENDER_BOTH: CAT_GENDER_BOTH,
+    };
+
+    // Send POST request to Flask app
+    fetch('/fossil-demand-forecasting', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then(response => response.json())
+      .then(responseData => {
+        // Display prediction result with animation
+        document.getElementById('responseText').innerText = responseData.statement || 'Prediction not available.';
+        AOS.refresh(); // Refresh animations
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('responseText').innerText = 'An error occurred. Please try again.';
+        AOS.refresh(); // Refresh animations
+      });
+  });
+
+  // Close the result popup when clicked on the close button
+  document.getElementById('closeResult').addEventListener('click', function () {
+    document.getElementById('result').style.display = 'none';
+  });
+</script>
+
+<!-- AOS JavaScript -->
+<script>
+  window.addEventListener('load', () => {
+    AOS.refresh();
+  });
+</script>
+  
+<!-- Business Impact Section -->
+<div class="business-impact-section" style="padding: 80px 20px; position: relative; color: #f5f5f5; text-align: center;">
+  <!-- Background Image with Darker Overlay (less grayish, more visible) -->
+  <div class="background-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://images.pexels.com/photos/6336015/pexels-photo-6336015.jpeg?cs=srgb&dl=pexels-jay-johnson-3719210-6336015.jpg&fm=jpg') no-repeat center center; background-size: cover; background-color: rgba(0, 0, 0, 0.721); z-index: -1;"></div>
+
+  <!-- Section Heading -->
+  <h2 style="font-family: 'Playfair Display', serif; color: #d4af37; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">Business Impact</h2>
+  <p style="font-family: 'Lora', serif; color: #dcdcdc; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">Our solution will drive measurable business outcomes through enhanced forecasting, optimized inventory, and operational efficiency.</p>
+  
+  <div class="impact-cards" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+
+    <!-- Cost Optimization Card -->
+    <div class="impact-card" style="background-color: rgba(43, 43, 43, 0.8); padding: 40px; border-radius: 12px; flex: 1 1 300px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <div style="font-size: 48px; color: #d4af37;">
+        <i class="fas fa-piggy-bank"></i> <!-- Icon for cost optimization -->
+      </div>
+      <h3 style="color: #d4af37; font-family: 'Lora', serif;">Cost Optimization</h3>
+      <p style="font-family: 'Lora', serif; color: #dcdcdc;">Reduce $400M in inventory holding costs by improving forecast accuracy and streamlining production planning.</p>
+    </div>
+
+    <!-- Revenue Growth Card -->
+    <div class="impact-card" style="background-color: rgba(43, 43, 43, 0.8); padding: 40px; border-radius: 12px; flex: 1 1 300px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <div style="font-size: 48px; color: #d4af37;">
+        <i class="fas fa-chart-line"></i> <!-- Icon for revenue growth -->
+      </div>
+      <h3 style="color: #d4af37; font-family: 'Lora', serif;">Revenue Growth</h3>
+      <p style="font-family: 'Lora', serif; color: #dcdcdc;">Protect and enhance $2.8B in net sales by ensuring product availability and meeting customer demand.</p>
+    </div>
+
+    <!-- Profitability Boost Card -->
+    <div class="impact-card" style="background-color: rgba(43, 43, 43, 0.8); padding: 40px; border-radius: 12px; flex: 1 1 300px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <div style="font-size: 48px; color: #d4af37;">
+        <i class="fas fa-dollar-sign"></i> <!-- Icon for profitability boost -->
+      </div>
+      <h3 style="color: #d4af37; font-family: 'Lora', serif;">Profitability Boost</h3>
+      <p style="font-family: 'Lora', serif; color: #dcdcdc;">Project an EPS improvement of $0.41 per share through better inventory management and operational efficiency.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Optional CSS (for animation effects) -->
+<style>
+  .impact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .impact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #0a0a0a; color: #f5f5f5;" id="contact">
+  <h3 class="w3-center" style="font-family: 'Playfair Display', serif; color: #d4af37; font-size: 36px; text-transform: uppercase; letter-spacing: 1px;">Contact</h3>
+  <p class="w3-center w3-large" style="font-family: 'Lora', serif; color: #eaeaea; font-weight: 300; margin-top: 16px;">Let's connect! You can reach out through the details below:</p>
+  
+  <div style="margin-top:48px; display: flex; justify-content: center; gap: 40px;" data-aos="fade-up">
+    <!-- Contact Details -->
+    <div class="w3-half">
+      <p style="font-family: 'Lora', serif; font-size: 18px; color: #eaeaea;">
+        <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="color: #d4af37;"></i>
+        <span style="font-weight: bold; color: #d4af37;">Phone:</span> +1 (470) 775-9968
+      </p>
+      
+      <p style="font-family: 'Lora', serif; font-size: 18px; color: #eaeaea;">
+        <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: #d4af37;"></i>
+        <span style="font-weight: bold; color: #d4af37;">Email:</span> <a href="pdesai22@student.gsu.edu" style="color: #eaeaea; text-decoration: none;">pdesai22@student.gsu.edu</a>
+      </p>
+      
+      <p style="font-family: 'Lora', serif; font-size: 18px; color: #eaeaea;">
+        <i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right" style="color: #d4af37;"></i>
+        <span style="font-weight: bold; color: #d4af37;">LinkedIn:</span> <a href="https://www.linkedin.com/in/panchamdesai/" target="_blank" style="color: #eaeaea; text-decoration: none;">https://www.linkedin.com/in/panchamdesai/</a>
+      </p>
+    </div>
+  </div>
+
+<!-- AOS JavaScript for Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); // Initialize AOS for animations
+</script>
+
+
+
+
