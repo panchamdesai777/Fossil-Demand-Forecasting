@@ -72,7 +72,12 @@ Our demand forecasting solution achieves an impressive accuracy, with a **Mean A
 
 - **Why this matters:** 
   A MAPE of 5% indicates that the model's predictions are highly reliable, with only minimal deviation from actual demand.
-- **Use case impact:** 
+---
+### Model Performance
+
+Below is a visualization of the model's predictions compared to actual demand:
+
+![Forecast Chart](https://github.com/panchamdesai777/Fossil-Demand-Forecasting/blob/main/images/Error-metric.jpg?raw=true)
 ---
 
 ## Business Impact
