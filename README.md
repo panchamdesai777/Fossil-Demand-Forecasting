@@ -65,7 +65,14 @@ The dataset consists of **44,907 rows** and **45 columns**, featuring both categ
 
 ### **Step 5: Model Evaluation and Finalization**
 - Built a **LightGBM** model and evaluated its performance using **K-fold cross-validation**, focusing on the **Mean Absolute Percentage Error (MAPE)** to gauge accuracy.
+---
+### Accuracy
 
+Our demand forecasting solution achieves an impressive accuracy, with a **Mean Absolute Percentage Error (MAPE)** of **5%**. 
+
+- **Why this matters:** 
+  A MAPE of 5% indicates that the model's predictions are highly reliable, with only minimal deviation from actual demand.
+- **Use case impact:** 
 ---
 
 ## Business Impact
