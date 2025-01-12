@@ -1,0 +1,13 @@
+Flask==2.2.2
+pandas==1.5.2
+numpy==1.24.0
+joblib==1.2.0
+vecstack==0.4.0
+lightgbm==4.5.0
+pmdarima==2.0.4
+statsmodels==0.14.1
+tqdm==4.66.6
+scikit-learn==1.2.0
+gensim==4.3.3
+matplotlib==3.6.2
+seaborn==0.12.1
