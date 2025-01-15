@@ -66,7 +66,7 @@ The dataset consists of **44,907 rows** and **45 columns**, featuring both categ
 - Optimized model parameters using **Bayesian Optimization** for the best possible configuration.
 
 ### **Step 5: Model Evaluation and Finalization**
-- Built a **LightGBM** model and evaluated its performance using **K-fold cross-validation**, focusing on the **Mean Absolute Percentage Error (MAPE)** to gauge accuracy.
+- Built a **Stacking** model and evaluated its performance using **K-fold cross-validation**, focusing on the **Mean Absolute Percentage Error (MAPE)** to gauge accuracy.
 ---
 ### Accuracy
 
