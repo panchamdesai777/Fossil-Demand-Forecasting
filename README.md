@@ -2,6 +2,9 @@
 
 ![Fossil Logo](https://www.exquisitetimepieces.com/blog/wp-content/uploads/2023/08/Are-fossil-watches-good.jpg)
 
+## Project Implementation
+![Fossil](https://www.exquisitetimepieces.com/blog/wp-content/uploads/2023/08/Are-fossil-watches-good.jpg)](https://www.loom.com/share/bf0b70787f7a460a9dc2417b94d6ab66?sid=064dd53f-ca72-497e-9387-b26e6033a887)
+
 ## Problem Statement
 Fossil, a global leader in fashion design and manufacturing, is renowned for its watches, handbags, and accessories. As a retailer of diverse products, **Fossil** faces challenges from both overproduction and underproduction. With production lead times and fluctuating market demands, predicting future product demand is critical for ensuring:
 
