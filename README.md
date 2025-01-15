@@ -95,15 +95,6 @@ The forecasting solution will directly impact **Fossil**'s bottom line:
 ### **Profitability Boost**
 - An anticipated **$0.41 EPS improvement** through better inventory management and operational efficiency.
 
----
-
-## Technologies Used
-
-- **Python** (Pandas, Numpy, Scikit-learn)
-- **LightGBM** for machine learning modeling
-- **ARIMA** for time series forecasting
-- **Bayesian Optimization** for hyperparameter tuning
-- **Word2Vec** for categorical feature embedding
 
 ---
 
