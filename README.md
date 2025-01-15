@@ -1,6 +1,8 @@
 # Fossil Demand Forecasting: A Machine Learning Solution
 
-![Fossil Logo](https://www.exquisitetimepieces.com/blog/wp-content/uploads/2023/08/Are-fossil-watches-good.jpg)
+![Fossil Logo](https://private-user-images.githubusercontent.com/52747416/403216296-6a91d210-dd49-460a-830a-639ee254873e.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY5MTA5MDgsIm5iZiI6MTczNjkxMDYwOCwicGF0aCI6Ii81Mjc0NzQxNi80MDMyMTYyOTYtNmE5MWQyMTAtZGQ0OS00NjBhLTgzMGEtNjM5ZWUyNTQ4NzNlLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTE1VDAzMTAwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNhZGUzYzdhYjA0NDUzNmYxNzU4ZDlkMzQwMDJiZmJiYmFkOGIxYTIxMzNiYTc5ZWQ0YmQzYzFlYjU5NzM0YmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.HE7dclE7Lwtdza9--tlJvtD69z3pVmzalb5PHLJpybc)
+
+
 
 ## Problem Statement
 Fossil, a global leader in fashion design and manufacturing, is renowned for its watches, handbags, and accessories. As a retailer of diverse products, **Fossil** faces challenges from both overproduction and underproduction. With production lead times and fluctuating market demands, predicting future product demand is critical for ensuring:
